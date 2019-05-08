@@ -1,0 +1,24 @@
+#!/usr/bin/python3
+import sys
+from math import *
+
+def do_all():
+    print("")
+
+def help():
+    print("USAGE\n\t./207demography code [...]\n")
+    print("DESCRIPTION\n\tcode\tcountry code")
+    exit(0)
+
+def check_error():
+    if (sys.argv[1] == "-h"):
+        help()
+
+def main():
+    if (len(sys.argv) < 2):
+        exit(84)
+    check_error()
+    do_all()
+
+if __name__ == '__main__':
+    main()
